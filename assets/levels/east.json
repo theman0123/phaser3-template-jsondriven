@@ -1,0 +1,27 @@
+{
+  "comment": "a basic example below: delete comment when finished",
+  "assets": {
+    "map_tileset": { "type": "image", "source": "assets/images/tileset.png" },
+
+    "player_spritesheet": {
+      "type": "spritesheet",
+      "source": "assets/images/world/player.png",
+      "frame_width": 16,
+      "frame_height": 16
+    },
+
+    "town_level_tilemap": {
+      "type": "tilemap",
+      "source": "assets/maps/town.json"
+    }
+  },
+  "groups": ["doors", "players"],
+  "map": {
+    "key": "town_level_tilemap",
+    "tilesets": ["map_tileset"]
+  },
+  "user_input": {
+    "key": "town_user_input",
+    "path": "assets/user_inputs/world_map_user_input.json"
+  }
+}
